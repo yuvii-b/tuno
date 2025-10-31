@@ -122,11 +122,7 @@ fun MusicListScreen(
 
     when (uiState) {
         is MusicListUiState.Loading -> {
-            Box(modifier = Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
-                Text("Loading music...")
-            }
+            Box(modifier = Modifier.fillMaxSize()) { }
         }
         is MusicListUiState.Empty -> {
             Box(modifier = Modifier.fillMaxSize(),
